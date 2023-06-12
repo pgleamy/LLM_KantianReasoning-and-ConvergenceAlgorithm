@@ -1,5 +1,7 @@
 # Project: 3D Sphere Animation
 
+** Also contains Iterative Image Prompts for significantly higher quality images from Stable Diffusion 2.1 **
+
 This project is a 3D Sphere Animation developed using Three.js. The sphere is displayed in the center of the browser window and can be interacted with using specific keyboard inputs. The project was developed using a unique iterative prompting technique with an AI language model. The .html examples progress through the iterative process from simple to complex and built at all times off of prior work. The text of the full ChatGPT4 dialogue is included and it is very long. I came up with the idea of the convergence algorithm part way through. I spent a lot of time exploring/testing it before ending on the sphere simulation coding. A lot is revealed throughout the whole dialogue. In particular, there are section where the model used enabled plugins repeatedly in an interactive manner of improvement, without otherwise outputing anything to the chat sessions. Why both coding a complex agent solution in code when the user can prompt the same behaviors directly to the model and have the results only revealed on convergence. This saves a ton of time and API tokens if doing this programmatically. The results are probably also be a lot better. 
 
 Next steps are to incorporate this programmatically so all these characteristics are in place at the start of the user session, rather than needing a book of prompts and experimentation to get there.
