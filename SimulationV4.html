@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Sphere Animation</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { width: 100%; height: 100% }
+        #legend {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent white */
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    </style>
+    <script src="https://threejs.org/build/three.js"></script>
+</head>
+<body>
+    <div id="legend">
+        <p>Arrow keys: Rotate sphere</p>
+        <p>C: Change sphere color</p>
+        <p>L: Move lights</p>
+    </div>
+
+    <script>
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        var renderer = new THREE.WebGLRenderer({ antialias: true});
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+renderer.shadowMap.enabled = true;
+
+        var geometry = new THREE.SphereGeometry(2, 50, 50);
+        var material = new THREE.MeshPhongMaterial({color: 0xffffff, specular: 0x0990505}); // Change sphere color to light blue
+        var sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
+
+sphere.castShadow = true;
+
+        // Add random tiny black dots on the sphere
+        for (let i = 0; i < 3000; i++) {
+            let dotGeometry = new THREE.SphereGeometry(0.04, 50, 50);
+            let dotMaterial = new THREE.MeshPhongMaterial({color: 0x666666, specular:0x777777});
+            let dot = new THREE.Mesh(dotGeometry, dotMaterial);
+            let position = new THREE.Vector3();
+            let vertices = sphere.geometry.attributes.position;
+            let randomIndex = Math.floor(Math.random() * vertices.count) * vertices.itemSize;
+            position.fromArray(vertices.array, randomIndex);
+            dot.position.copy(position);
+dot.castShadow = true;
+            sphere.add(dot);
+        }
+
+	scene.background = new THREE.Color(0xabcdef);
+
+        var light = new THREE.PointLight(0xffffff, 1, 100);
+        light.position.set(7, 5, 10);
+        scene.add(light);
+
+
+
+        //var light2 = new THREE.PointLight(0xffffff, .5, 10);
+        //light2.position.set(-7, -5, 2);
+        //scene.add(light2);
+
+	// Add ambient light
+	var ambientLight = new THREE.AmbientLight(0x404040, 0.1); // soft white light
+	scene.add(ambientLight);
+
+
+        camera.position.z = 4;
+
+        var animate = function () {
+            requestAnimationFrame(animate);
+            //sphere.rotation.x += 0.01;
+            //sphere.rotation.y += 0.01;
+            renderer.render(scene, camera);
+        };
+
+        animate();
+
+        window.addEventListener('keydown', function(event) {
+            switch (event.keyCode) {
+                case 37: // Left
+                    sphere.rotation.y -= 0.01;
+                    grass1.rotation.z += 0.01;
+                    grass2.rotation.z += 0.01;
+                    grass3.rotation.z += 0.01;
+                    break;
+
+                case 39: // Right
+                    sphere.rotation.y += 0.01;
+                    grass1.rotation.z -= 0.01;
+                    grass2.rotation.z -= 0.01;
+                    grass3.rotation.z -= 0.01;
+                    break;
+
+                case 38: // Up
+                    sphere.rotation.x -= 0.01;
+                    break;
+
+                case 40: // Down
+                    sphere.rotation.x += 0.01;
+                    break;
+
+                case 67: // C
+                    var color = new THREE.Color(Math.random(), Math.random(), Math.random());
+                    sphere.material.color = color;
+                    break;
+
+        	case 76: // L
+            	// Move the lights to new complementary positions
+            		light.position.set(Math.random() * 10 - 5, Math.random() * 10 - 5, Math.random() * 10 - 5);
+            		//light2.position.set(-light.position.x, -light.position.y, -light.position.z);
+            		break;
+            }
+        }, false);
+    </script>
+</body>
+</html>
