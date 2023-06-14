@@ -2,9 +2,9 @@
 
 Contains full prompt examples. The prompts create thought _processes_, not just a single thought. The NLLA is used to loop the language model through an indeterminate number of cummulative revision scenarios, until the model converges on the best response it can provide. This revision process is completely silent, although you can see plugin hits and contents as usual (which is a _little creepy_). Only on convergence does the model release the final response. The model also reports the number of iterations of the NLLA loop it used. The model will also report briefly each 50 iterations, but otherwise remain silent. You can adjust the criteria of repeats for convergence as you like, or anything else, as long as the underlying framework remains.
 
-I've never seen anyone try writing natural language algorithms. Maybe someone has but I haven't heard about it. I've been a lawyer the last 23 years. I decided to leave that and dedicate myself to this and coding AI applications. Maybe having been a lawyer might have helped me to better legislate to the llm. 
+I've never seen anyone try writing natural language algorithms. Maybe someone has but I haven't heard about it. I've been a lawyer the last 23 years. I left that because I had to, and a while afterwards I kind of woke up to AI because of ChatGPT. Chronic computer nerd plus retired lawyer. Maybe having been a lawyer might have helped me to better legislate to the llm? 
 
-I don't have the resources to test the efficacy of these prompts. I believe they improve 1-shot response quality. It is based for now on just my personal experiences. You could use just a regular 1-shot, or this. But both are 1-shot, so why not? 
+I don't have the resources to test the efficacy of these prompts. I believe they improve 1-shot response quality. It is based for now on just my personal experiences. You could use just a regular 1-shot, or this. Both are 1-shot, so why not? 
 
 # Project: Tree of Thought Image Prompt for Stable Diffusion 2.1
 
