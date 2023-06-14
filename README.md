@@ -1,4 +1,4 @@
-# Project: Convergent Thought Process Prompt (CTPP) and Natural Language Loop Algorith (NLLA)
+# Project: Convergent Thought Process Prompt (CTPP) and Natural Language Loop Algorithm (NLLA)
 
 Contains full prompt examples. The prompts create thought _processes_, not just a single thought. The NLLA is used to loop the language model through an indeterminate number of cummulative revision scenarios, until the model converges on the best response it can provide. This revision process is completely silent, although you can see plugin hits and contents as usual (which is a _little creepy_). Only on convergence does the model release the final response. The model also reports the number of iterations of the NLLA loop it used. The model will also report briefly each 50 iterations, but otherwise remain silent. You can adjust the criteria of repeats for convergence as you like, or anything else, as long as the underlying framework remains.
 
