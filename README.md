@@ -1,8 +1,22 @@
-# Project: 3D Sphere Animation
+# Project: Convergent Thought Process Prompt (CTPP) and Natural Language Loop Algorith (NLLA)
 
-** Also contains Iterative Image Prompts for significantly higher quality images from Stable Diffusion 2.1 **
+Contains full prompt examples. The prompts create thought _processes_, not just a single thought. The NLLA is used to loop the language model through an indeterminate number of cummulative revision scenarios, until the model converges on the best response it can provide. This revision process is completely silent, although you can see plugin hits and contents as usual (which is a _little creepy_). Only on convergence does the model release the final response. The model also reports the number of iterations of the NLLA loop it used. The model will also report briefly each 50 iterations, but otherwise remain silent. You can adjust the criteria of repeats for convergence as you like, or anything else, as long as the underlying framework remains.
 
-This project is a 3D Sphere Animation developed using Three.js. The sphere is displayed in the center of the browser window and can be interacted with using specific keyboard inputs. The project was developed using a unique iterative prompting technique with an AI language model. The .html examples progress through the iterative process from simple to complex and built at all times off of prior work. The text of the full ChatGPT4 dialogue is included and it is very long. I came up with the idea of the convergence algorithm part way through. I spent a lot of time exploring/testing it before ending on the sphere simulation coding. A lot is revealed throughout the whole dialogue. In particular, there are section where the model used enabled plugins repeatedly in an interactive manner of improvement, without otherwise outputing anything to the chat sessions. Why both coding a complex agent solution in code when the user can prompt the same behaviors directly to the model and have the results only revealed on convergence. This saves a ton of time and API tokens if doing this programmatically. The results are probably also be a lot better. 
+I've never seen anyone try writing natural language algorithms. Maybe someone has but I haven't heard about it. I've been a lawyer the last 23 years. I decided to leave that and dedicate myself to this and coding AI applications. Maybe having been a lawyer might have helped me to better legislate to the llm. 
+
+I don't have the resources to test the efficacy of these prompts. I believe they improve 1-shot response quality. It is based for now on just my personal experiences. You could use just a regular 1-shot, or this. But both are 1-shot, so why not? 
+
+# Project: Tree of Thought Image Prompt for Stable Diffusion 2.1
+
+I'm experimenting with wrapping my image prompt within a collaborative NLLA with setable iterations. 
+
+I have no idea if these prompts are of benefit. I only just feel I do get better results out of it. But that is completely subjective. If you think you received any benefits from them let me know!
+
+
+# Project: 3D Sphere Animation - ChatGPT4DialogueLink.md 
+## Where I came up with the convergence thought process idea. Have a look at SimulationV4.html for a fun thing I coded with it.
+
+This project is a 3D Sphere Animation developed using Three.js. The sphere is displayed in the center of the browser window and can be interacted with using specific keyboard inputs. The project was developed using a unique iterative prompting technique with an AI language model. The .html examples progress through the iterative process from simple to complex and built at all times off of prior work. The text of the full ChatGPT4 dialogue is included and it is very long. I came up with the idea of the convergence algorithm part way through. I spent a lot of time exploring/testing it before ending on the sphere simulation coding. A lot is revealed throughout the whole dialogue. In particular, there are section where the model used enabled plugins repeatedly in an interactive manner of improvement, without otherwise outputing anything to the chat sessions. The user will prompt the model and have the results only revealed on convergence. This saves a ton of time and API tokens if doing this programmatically. The results are probably also better. 
 
 Next steps are to incorporate this programmatically so all these characteristics are in place at the start of the user session, rather than needing a book of prompts and experimentation to get there.
 
