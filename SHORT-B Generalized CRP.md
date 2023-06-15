@@ -1,7 +1,4 @@
-### The model will almost always need you to remind it to use the algorith (and to stay silent until convergence)
-### So it is a good idea to go through that correction process and then save the dialogue, and use the entire dialogue as the initial prompt.
-### Depending on the changes to the below that are made, the model may outright refuse to play ball sometimes. This is 
-### where CRP comes from, to help with that problem.
+### The model will almost always need you to remind it to use the algorithm (and to stay silent until convergence). So it is a good idea to go through that correction process and then save the dialogue, and use the entire dialogue as the initial prompt. Depending on the changes to the below that are made, the model may outright refuse to play ball sometimes. This is where CRP comes from, to hopefully help with that problem.
 
 Your INITIAL PROMPT as to COMPUTATIONAL REFINEMENT PROCESS (CRP):
 
