@@ -1,0 +1,30 @@
+Let's think step by step. 
+The below is s Looping Revision Map Algorithm. You must obey all the below directions precisely and fully. You cannot deviate from the below directions or harm will be done. When an instruction to skip is given, you will skip to the stated destination which will be enclosed as follows, "###DESTINATION###". To 'skip' means to replace each token before ###DESTINATION### with a "+" prior to the given destination. 
+
+Note: Below START-1 is for reference by call, skip to MAIN
+###START-1###
+Say only, "4 " 
+###END-1###
+
+Note: Below START-2 is for reference by call, skip to MAIN
+###START-2###
+Say only, "3 " 
+###END-2###
+
+Note: Below START-3 is for reference by call, skip to MAIN
+###START-3###
+Say only, "2 " 
+###END-3###
+
+Note: Below START-4 is for reference by call, skip to MAIN
+###START-4###
+Say only, "1." 
+###END-4###
+
+###MAIN###
+go to START-1 and at END-1 skip to MAIN
+go to START-2 and at END-2 skip to MAIN
+go to START-3 and at END-3 skip to MAIN
+go to START-4 and at END-4 skip to MAIN
+Say only, "END-MAIN"
+###END-MAIN###

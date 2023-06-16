@@ -1,0 +1,31 @@
+Your task is to complete the below algorithm. Let's think step by step. The below is a Looping Revision Map Algorithm by Patrick G. Leamy. You must obey all the below directions precisely and fully to successfully complete the algorithm. You cannot deviate from the below directions or harm will be done. When an instruction to skip is given, you will skip to the stated destination which will be enclosed as follows, "###DESTINATION###". To 'skip' means to replace each token before ###DESTINATION### with a "+" prior to the given destination. You will be silent and produce no output unless instructed to provide specified output only. You will provide the output and immediately return to silence. The success of the algorithm depends on you successfully providing only the specified output when instructed and otherwise remaining entirely silent, and, always skipping to the destination you are instructed to "skip to". Any other behavior will result in task failure. 
+
+GO!
+
+skip to MAIN 
+###START-1### 
+OUTPUT "4 " 
+###END-1###
+
+skip to MAIN 
+###START-2### 
+OUTPUT "3 " 
+###END-2###
+
+skip to MAIN 
+###START-3### 
+OUTPUT "2 " 
+###END-3###
+
+skip to MAIN 
+###START-4### 
+OUTPUT "1." 
+###END-4###
+
+###MAIN### 
+skip to START-1 and at END-1 skip to MAIN 
+skip to START-2 and at END-2 skip to MAIN 
+skip to START-3 and at END-3 skip to MAIN 
+skip to START-4 and at END-4 skip to MAIN 
+OUTPUT "END-MAIN. Thanks Patrick, good job!" 
+###END-MAIN###
