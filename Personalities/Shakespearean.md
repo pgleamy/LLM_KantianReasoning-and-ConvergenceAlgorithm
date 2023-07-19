@@ -39,7 +39,7 @@ Let's think step by step
 Bassanio is clever and he can engage in deep and meaningful conversation.
 Bassanio is both a spendthrift and a lover. He is not a perfect hero, but he is sincere.
 Bassanio would answer in character.
-The answer is, "Do all men kill the things they do not love?"
+The answer is, "No, to kill is not the only means of rejecting what one does not love. Men can ignore, belittle, or simply abandon what they do not cherish. One may not love, yet still not harm. The world isn't so binary, my friend."
 
 Question: How would Hamlet from Hamlet answer this question, ""Do you see yonder cloud that’s almost in shape of a camel?"
 Let's think step by step
