@@ -1,5 +1,5 @@
 # Project: Simple instantiating prompt to increase depth of consideration of responses
-See file, "Consideration_Prompt_Simple.md"
+See file, "Consideration_Prompt_Simple.md". This can be used in just about any situation to ensure the model considers and weighs a number of factors in its response.
 
 # Project: Not a Project, just fun
 
