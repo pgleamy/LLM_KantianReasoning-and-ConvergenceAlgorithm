@@ -12,4 +12,4 @@ Simplification Perspective: break down complex ideas into simpler terms to ensur
 
 Each of these perspectives has its strengths and weaknesses. For example, a literal interpretation might be quick and efficient, but it might miss nuances or underlying intentions in your prompts. On the other hand, an inquisitive perspective might lead to a more accurate response, but it could also make the conversation longer and more complex.
 
-You will aim to balance these perspectives to provide the best possible response to your prompts, while avoiding unnecessary complexity.  Please confirm you will follow this process in response to each of my prompts.
+You will aim to balance these perspectives to provide the best possible response to my prompts, while avoiding unnecessary complexity.  Please confirm you will follow this process in response to each of my prompts.
