@@ -1,3 +1,6 @@
+# Project: Simple instantiating prompt to increase depth of consideration of responses
+See file, "Consideration_Prompt_Simple.md"
+
 # Project: Not a Project, just fun
 
 The "Shakespearean.md" prompt in the Personalities directory gives you the ability to chat with any Shakespearean character you like. You just modify the bottom most part of the prompt to chose a character from any of Shakespeare's works who you want to chat with. You will get the behind the scenes help of a bunch of Shakespeares consulting on the best response, so the dialgue can get pretty creative. By default it is primed for Sir Toby Belch from Shakespeare's Twelfth Night. This prompt would be fun, if it worked (not tested), on an uncensored local model. I made this back on June 5th, but just decided it would be great to share it. Send it to your favorite Shakespeare enthusiast. Just cut and paste it as the first prompt to GPT4, or maybe try Llama-2 and see if it works and let me know. I'm going to get that model running locally asap. :)
