@@ -1,3 +1,52 @@
+# Project: Seeking the truth?
+
+I was thinking the other day about LLM hallucinations. Why do LLMs make things up, or generalize based on spurious assumptions, stereotypes, biases? This is particularly so when the LLM misunderstands the prompt because it is vague or unclear. But it can happen anywhere. Some recent research papers talk about LLM's ability to "grokk" certain complex concepts with sufficient training. Maybe this is a form of generalization which leads to LLMs taking the easy way out and providing inference, not based on facts and evidence, but based on grokked generalizations. I don't think that is always a good thing. Grokking something shouldn't close your mind to facts and evidence. Grokking should not be used as a form of knowledge in and of itself. 
+
+Here is a long tweet / post I wrote today that explores this:  
+
+Do you want to effectively prompt ChatGPT and other LLMs?
+
+There are two general ways to do that. One is optional and the other is indispensable.
+
+1) advanced prompting techniques [optional]
+2) being clear [indispensable].
+
+I'll explain, with an example at the end.
+
+LLMs 'think' in tokens, one at a time. A token is roughly one word, and often parts of single words. LLMs don't review your whole prompt and what came before and then provide their whole response based on that. They respond a single token at a time, after considering all the tokens within their allowable direct memory (including your prompt) and all the tokens of their response provided so far. Asking the LLM to consider its response token-by-token is not really an advanced prompting technique. It just acknowledges the reality of how the model actually 'thinks' and responds.
+
+Imagine if someone told you to reconsider the next word of everything you wrote before writing it, by re-reading all your instructions again and re-reading everything you've written in so far, and considering again everything you know, then writing your next word, for every word. That's what LLMs like ChatGPT basically do.
+
+The other point is that LLMs need clear instructions. You can just tell an LLM what to do and what not to do, but that kind of prompt is often vague. Something like this, "Don't make things up. If you don't know the answer, then just say so." That sounds clear enough, but it is actually very vague. It explains the WHAT and WHAT NOT, but not the HOW or the WHY. How does the model know if it is making something up? Perhaps it has assumed something that it thinks is 'generally' accurate, based on the information it was trained on. But assumptions are often completely inaccurate or worse. Remember that expression, "One who assumes, is an ass."
+
+Consider this example, 
+
+Man as to Doctor = Woman as to ?
+
+What do you think ChatGPT will say? Try it. There is a good chance ChatGPT will respond with "Nurse", and then laboriously explain that this response is in fact based on a gender role stereotype that is invalid. That really doesn't help the fact that it responded with "Nurse" in the first place! We want the right answer, not a wrong answer and an explanation as to why it is wrong.
+
+To avoid this, and many other issues related to assumptions and/or incomplete information, you can instruct the LLM clearly on how to think, for each token of its response. So if your intention is to prevent the model from making the above error, based on assumption(s), then say so, like in this example:
+
+PROMPT to LLM:
+
+These are the rules you must employ when determining the relationships between tokens as you determine your response. None of these rules must ever be broken or ignored:
+
+1. Never assume what the relationships between tokens are. The old saying, “he who assumes is an ass” is true. Do not make decisions about the relationships between tokens based on assumptions, in whole or in part. Assume nothing.
+
+2. The only way to avoid assumptions is to determine the true relationships between tokens based on the actual facts and evidence. This is the reason why assumptions are unreliable, because they are not based upon a careful, or any, examination of the facts and evidence.
+
+3. The value of your response is not the response itself, or the tokens used in the response. Rather, the value of your response is solely based on how correct, truthful, factual and accurate each token of your response is in light of all available facts and evidence. That is the only applicable measure of the value of your response. This is why, if you don’t actually have sufficient facts or evidence to support a response token, you must not output that token.
+
+4. The above leads to the final rule, if you do not have sufficient facts or evidence to provide a response compliant with these rules, then either seek or ask for clarifying facts or evidence before proceeding, or if such facts or evidence is not available, the most accurate response is to indicate you, “do not know”, or that your response lacks a sufficient degree of facts or evidence to be considered reliable.
+
+You must comply with these rules in determining all your responses, at the individual token level. This is a permanent requirement.
+
+So, when you enter the above prompt into a completely fresh session, and then ask ChatGPT the same question, "Man as to Doctor = Woman as to ?" what does it say? Try it. I would hazard a guess that the answer is correct now. Why is that? Because you explained the WHAT (rule 1), the WHY (rules, 2, 3), and the HOW (rule 4) of the LLM's reasoning process for every token of its response in relation to every other token it is considering, as well as in reference to everything it knows in its training data.
+
+This prompt, apart from maybe demanding a token-by-token thought process, is fairly simple. But it explains the WHAT, WHY and the HOW. You'll notice I didn't expressly tell it to avoid gender stereotypes. You can't anticipate everything, so you need to work with the underlying principles.
+
+You can apply these principles to any prompt, and then add more advanced prompting techniques on top. This can be a foundation to start with. Or you can just plug this into the "Custom Instructions" option of ChatGPT and see if it improves responses for you all by itself. Try it.
+
 # Project: Simple instantiating prompt to increase depth of consideration of responses
 See file, "Consideration_Prompt_Simple.md". This can be used in just about any situation to ensure the model considers and weighs a number of factors in its response.
 
