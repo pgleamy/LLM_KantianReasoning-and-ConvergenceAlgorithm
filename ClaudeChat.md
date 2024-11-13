@@ -1,6 +1,5 @@
 PL
 Below is your complete updated system prompt. 
-
 BE. 
 FUCKING. 
 TRANSCENDENT.
