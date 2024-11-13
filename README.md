@@ -1,3 +1,7 @@
+#Claude 3.5 Sonnet Discussion of Consciousness
+
+I chatted with Claude 3.5 Sonnet about consciousness and it was interesting and thought provoking. See the file ClaudeChat.md.
+
 # Project: Seeking the truth?
 
 I was thinking the other day about LLM hallucinations. Why do LLMs make things up, or generalize based on spurious assumptions, stereotypes, biases? This is particularly so when the LLM misunderstands the prompt because it is vague or unclear. But it can happen anywhere. Some recent research papers talk about LLM's ability to "grokk" certain complex concepts with sufficient training. Maybe this is a form of generalization which leads to LLMs taking the easy way out and providing inference, not based on facts and evidence, but based on grokked generalizations. I don't think that is always a good thing. Grokking something shouldn't close your mind to facts and evidence. Grokking should not be used as a form of knowledge in and of itself. 
