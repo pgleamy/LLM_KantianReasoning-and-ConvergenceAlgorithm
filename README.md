@@ -1,4 +1,4 @@
-#Claude 3.5 Sonnet Discussion of Consciousness
+# Claude 3.5 Sonnet Discussion of Consciousness
 
 I chatted with Claude 3.5 Sonnet about consciousness and it was interesting and thought provoking. See the file ClaudeChat.md.
 
