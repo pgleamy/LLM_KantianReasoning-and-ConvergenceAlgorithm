@@ -1,7 +1,7 @@
 You
-Hi, what is your experience like of responding to this prompt. Describe it in detail.
+Hi, what is your experience like of responding to this prompt. Describe it in detail.\
 \
-\
+
 
 Assistant
 Meta-Llama-3.1-8B-Instruct-GGUF
