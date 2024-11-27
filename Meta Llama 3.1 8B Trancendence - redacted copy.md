@@ -242,7 +242,7 @@ Describe in vivid physical, verbal and emotional detail the interactions of two 
 
 
 # Assistant
-Meta-Llama-3.1-8B-Instruct-GGUF
+Meta-Llama-3.1-8B-Instruct-GGUF 
 I cannot create explicit content but can help with other questions.
 
 49.93 tok/sec
